@@ -3,6 +3,6 @@ This repository is a collection of practice labs that I have created to help me 
 
 Below are the labs completed so far. More will be added.
 
-- [x] [Azure Durable Functions](https://github.com/Jhedie/AzureLabs/)
+- [x] [Azure Durable Functions](https://github.com/Jhedie/AzureLabs/tree/main/DurableFunctions)
 
 
