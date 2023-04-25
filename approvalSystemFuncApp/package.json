@@ -1,0 +1,9 @@
+{
+  "name": "approvalSystemFuncApp",
+  "version": "1.0.0",
+  "dependencies": {
+    "durable-functions": "^2.1.2",
+    "moment": "^2.29.4",
+    "typescript": "^5.0.4"
+  }
+}
