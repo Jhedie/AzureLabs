@@ -12,3 +12,6 @@ Below are the labs completed so far. More will be added.
 2. [Approval System Function App](https://github.com/Jhedie/AzureLabs/tree/main/approvalSystemFuncApp)
     - Orchestrating a long-running workflow as a set of activities using Durable Functions.
     - [Following lab](https://learn.microsoft.com/en-us/training/modules/create-long-running-serverless-workflow-with-durable-functions/1-introduction)
+3. [Simple Function App](https://github.com/Jhedie/AzureLabs/tree/main/SimpleFunctionApp)
+    - Simple function that takes a name as parameter and returns a string
+    - It function can also take an image from one blob storage space to another using bindings
