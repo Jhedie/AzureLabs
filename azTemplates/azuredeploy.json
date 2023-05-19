@@ -1,24 +1,53 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
-  "parameters": {},
+  "parameters": {
+    "storageAccountType": {
+      "type": "string",
+      "defaultValue": "Standard_LRS",
+      "allowedValues": [
+        "Standard_LRS",
+        "Standard_GRS",
+        "Standard_ZRS",
+        "Premium_LRS"
+      ],
+      "metadata": {
+        "description": "Storage Account type"
+      }
+    },
+    "storageName": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 24,
+      "metadata": {
+        "description": "The name of Azure Account Storage"
+      }
+    }
+  },
   "functions": [],
   "variables": {},
   "resources": [
     {
-      "name": "learnexercise5432",
+      "name": "[parameters('storageName')]",
       "type": "Microsoft.Storage/storageAccounts",
       "apiVersion": "2021-04-01",
       "tags": {
-        "displayName": "learnexercise5432"
+        "displayName": "[parameters('storageName')]"
       },
       "location": "[resourceGroup().location]",
       "kind": "StorageV2",
       "sku": {
-        "name": "Standard_LRS",
-        "tier": "Standard"
+        "name": "[parameters('storageAccountType')]"
+      },
+      "properties": {
+        "supportsHttpsTrafficOnly": true
       }
     }
   ],
-  "outputs": {}
+  "outputs": {
+    "storageEndpoint": {
+      "type": "object",
+      "value": "[reference('learnexercise5432').primaryEndpoints]"
+    }
+  }
 }
