@@ -30,7 +30,7 @@
     {
       "name": "[parameters('storageName')]",
       "type": "Microsoft.Storage/storageAccounts",
-      "apiVersion": "2021-04-01",
+      "apiVersion": "2021-04-01", //do not use variables here
       "tags": {
         "displayName": "[parameters('storageName')]"
       },

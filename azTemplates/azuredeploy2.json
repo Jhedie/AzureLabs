@@ -23,14 +23,19 @@
     }
   },
   "functions": [],
-  "variables": {},
+  "variables": {
+    // do not use reference functions in variables section as reference function is resolved when template is parsed
+    "uniqueStorageName": "[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"
+  },
   "resources": [
     {
-      "name": "[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]",
+      "name": "[variables('uniqueStorageName')]",
       "type": "Microsoft.Storage/storageAccounts",
+      /* //do not use variables here: The API version determines the schema of the resource, 
+      and often you can't change the version without changing the properties for the resource. */
       "apiVersion": "2019-06-01",
       "tags": {
-        "displayName": "[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"
+        "displayName": "[variables('uniqueStorageName')]"
       },
       "location": "[resourceGroup().location]",
       "kind": "StorageV2",
