@@ -36,7 +36,11 @@ Below is a list of the labs explored:
 ### [Azure Container Instances]
 
 1. [Run Docker with Azure Container Instances](https://learn.microsoft.com/en-us/training/modules/run-docker-with-azure-container-instances/)
-
+   - Learning how to create containers
+   - configure restart policies, 
+   - connect to resources for example, COSMOS DB using environment variables to pass the connection information in a secure way.
+   - Mount an Azure file share to an Azure container instance for later access
+   - Troubleshoot Azure Container Instances using logs, metrics and running executions
 
 ### Resources:
 
