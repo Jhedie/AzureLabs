@@ -2,7 +2,7 @@
 
 This repository is a collection of practice labs that I have created to help keep track and gain practical experience working with various Azure services and technologies.
 
-Below is a list of the labs completed so far:
+Below is a list of the labs explored:
 
 ### [Azure Functions]
 
@@ -32,6 +32,15 @@ Below is a list of the labs completed so far:
 
 2. [Deploy and manage resources in Azure by using JSON ARM templates]():
    - [Following Lab](https://learn.microsoft.com/en-us/training/modules/modify-azure-resource-manager-template-reuse/1-introduction)
+
+### [Azure Container Instances]
+
+1. [Run Docker with Azure Container Instances](https://learn.microsoft.com/en-us/training/modules/run-docker-with-azure-container-instances/)
+   - Learning how to create containers
+   - configure restart policies, 
+   - connect to resources for example, COSMOS DB using environment variables to pass the connection information in a secure way.
+   - Mount an Azure file share to an Azure container instance for later access
+   - Troubleshoot Azure Container Instances using logs, metrics and running executions
 
 ### Resources:
 
