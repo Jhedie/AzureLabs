@@ -46,18 +46,17 @@ Below is a list of the labs explored:
 ### [Azure Container Registry]
 
 1.  [Create Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli)
-
-- Create azure container registry instance and push container image into the registry
+    - Create azure container registry instance and push container image into the registry
+   
 
 2.  [Prepare a geo-replicated Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-prepare-registry)
 
-- Preparation
-  - Created a azure container registry and replicated in another region
-  - Cloned a sample web application that serves an HTML page that displays the region from which the image was deployed by Azure Container Registry.
-  - built docker image and pushed to ACR which should show in both regions.
-- Deployment:
-  -
-- Issues discovered: Project uses .NET version 2 which is not [compatible](https://github.com/NuGet/Home/issues/12227#issuecomment-1548221158) on M1 chips. Switch to different OS to save time.
+   - Preparation
+      - Created a azure container registry and replicated in another region
+      - Cloned a sample web application that serves an HTML page that displays the region from which the image was deployed by Azure Container Registry.
+      - built docker image and pushed to ACR which should show in both regions.
+
+   - Issues discovered: Project uses .NET version 2 which is not [compatible](https://github.com/NuGet/Home/issues/12227#issuecomment-1548221158) on M1 chips. Switch to different OS to save time.
 
 ### Resources:
 
