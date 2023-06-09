@@ -4,7 +4,7 @@ This repository is a collection of practice labs that I have created to help kee
 
 Below is a list of the labs explored:
 
-### [Azure Functions]
+### Azure Functions
 
 1. [Durable Function](https://github.com/Jhedie/AzureLabs/tree/main/DurableFunctions)
    - creating simple durable function that converts denary to binary. The function will use orchestration to chain together calls to a function which in this case will convert a given denary number to binary.
@@ -16,7 +16,7 @@ Below is a list of the labs explored:
    - Simple function that takes a name as parameter and returns a string
    - It function can also take an image from one blob storage space to another using bindings
 
-### [Azure VMs]
+### Azure VMs
 
 1. [Azure Managed Identities](https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm):
    - This helps to avoid passing credentials or hardcode them in virtual machines.
@@ -25,7 +25,7 @@ Below is a list of the labs explored:
    - RDP(Remote Desktop Protocol)
    - ssh
 
-### [ARM Templates]
+### ARM Templates
 
 1. [Deploy Azure infrastructure by using JSON ARM templates](https://github.com/Jhedie/AzureLabs/tree/main/azTemplates):
 
@@ -34,7 +34,7 @@ Below is a list of the labs explored:
 2. Deploy and manage resources in Azure by using JSON ARM templates:
    - [Following Lab](https://learn.microsoft.com/en-us/training/modules/modify-azure-resource-manager-template-reuse/1-introduction)
 
-### [Azure Container Instances]
+### Azure Container Instances
 
 1. [Run Docker with Azure Container Instances](https://learn.microsoft.com/en-us/training/modules/run-docker-with-azure-container-instances/)
    - Learning how to create containers
@@ -43,7 +43,7 @@ Below is a list of the labs explored:
    - Mount an Azure file share to an Azure container instance for later access
    - Troubleshoot Azure Container Instances using logs, metrics and running executions
 
-### [Azure Container Registry]
+### Azure Container Registry
 
 1.  [Create Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli)
 
