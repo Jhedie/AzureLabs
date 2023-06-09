@@ -50,15 +50,15 @@ Below is a list of the labs explored:
     - Create azure container registry instance and push container image into the registry
 
 2.  Prepare a geo-replicated Azure Container Registry
-   - [Follwing Lab](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-prepare-registry)
+    - [Follwing Lab](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-prepare-registry)
 
-   - Preparation
+    - Preparation
       - Create a azure container registry and replicated in another region
       - Clone a sample web application that serves an HTML page that displays the region from which the image was deployed by Azure Container Registry.
       - build docker image and pushed to ACR which should show in both regions.
-   - Deploy
+    - Deploy
       - Deploy web app from the geo-replicated Azure container registry
-   - Update:
+    - Update:
       - Push an updated container image to the geo-replicated container registry for automatic regional web app deployments
       - modify application
       - rebuild image
@@ -66,7 +66,7 @@ Below is a list of the labs explored:
       - view webhook logs
       - view updated webapps
       - The idea is once a new version of the app is pushed to the ACR, webhooks work    like a notification system, they tell containers of the webapps to locally pull the latest changes from the nearest replica of the registry.
-   - Issues discovered: Project uses .NET version 2 which is not [compatible](https://github.com/NuGet/Home/issues/12227#issuecomment-1548221158) on M1 chips. Switch to different OS to save time.
+     - Issues discovered: Project uses .NET version 2 which is not [compatible](https://github.com/NuGet/Home/issues/12227#issuecomment-1548221158) on M1 chips. Switch to different OS to save time.
 
 ### Resources:
 
