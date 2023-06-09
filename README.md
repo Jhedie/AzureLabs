@@ -28,6 +28,7 @@ Below is a list of the labs explored:
 ### [ARM Templates]
 
 1. [Deploy Azure infrastructure by using JSON ARM templates](https://github.com/Jhedie/AzureLabs/tree/main/azTemplates):
+
    - [Following Lab](https://learn.microsoft.com/en-us/training/modules/create-azure-resource-manager-template-vs-code/)
 
 2. [Deploy and manage resources in Azure by using JSON ARM templates]():
@@ -37,10 +38,22 @@ Below is a list of the labs explored:
 
 1. [Run Docker with Azure Container Instances](https://learn.microsoft.com/en-us/training/modules/run-docker-with-azure-container-instances/)
    - Learning how to create containers
-   - configure restart policies, 
+   - configure restart policies,
    - connect to resources for example, COSMOS DB using environment variables to pass the connection information in a secure way.
    - Mount an Azure file share to an Azure container instance for later access
    - Troubleshoot Azure Container Instances using logs, metrics and running executions
+
+### [Azure Container Registry]
+
+   1. [Create Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli)
+   - Create azure container registry instance and push container image into the registry
+   2. [Prepare a geo-replicated Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-prepare-registry)
+   - Preparation
+      - Created a azure container registry and replicated in another region
+      - Cloned a sample web application that serves an HTML page that displays the region from which the image was deployed by Azure Container Registry.
+      - built docker image and pushed to ACR which should show in both regions.
+   - Deployment:
+   - Troubleshooting: docker restore for some reason does not work on M1 chip. [This](https://github.com/NuGet/Home/issues/12227#issuecomment-1548221158) is the solution I tried and it worked.
 
 ### Resources:
 
