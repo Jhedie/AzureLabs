@@ -68,6 +68,11 @@ Below is a list of the labs explored:
       - The idea is once a new version of the app is pushed to the ACR, webhooks work    like a notification system, they tell containers of the webapps to locally pull the latest changes from the nearest replica of the registry.
      - Issues discovered: Project uses .NET version 2 which is not [compatible](https://github.com/NuGet/Home/issues/12227#issuecomment-1548221158) on M1 chips. Switch to different OS to save time.
 
+### Azure Storage Queues
+
+1.  [Azure Queue Storage client library for JavaScript](https://github.com/Jhedie/AzureLabs/tree/main/AzureStorage/queues-quickstart)
+   - [Following lab](https://learn.microsoft.com/en-us/azure/storage/queues/storage-quickstart-queues-nodejs?tabs=passwordless%2Croles-azure-cli%2Cenvironment-variable-windows%2Csign-in-azure-cli#update-a-message-in-a-queue)
+
 ### Resources:
 
 1. [ExamPro](https://app.exampro.co/)
