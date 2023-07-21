@@ -45,11 +45,11 @@ Below is a list of the labs explored:
 
 ### Azure Container Registry
 
-1.  [Create Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli)
-
+1.  [Create Azure Container Registry](https://github.com/Jhedie/AzureLabs/tree/main/azureContainerRegistry)
+    - [Following lab](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli)
     - Create azure container registry instance and push container image into the registry
 
-2.  Prepare a geo-replicated Azure Container Registry
+3.  Prepare a geo-replicated Azure Container Registry
     - [Follwing Lab](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-prepare-registry)
 
     - Preparation
